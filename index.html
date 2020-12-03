@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hello!</h1>
-    <script src="app.js"></script>
-</body>
+  </head>
+ 
+  <body>
+    <div class="container">
+      <h1>Api Search</h1>
+      <div class="srch">
+        <label for="id"> ID search: </label>
+        <input type="text" id="myid" name="id" />
+        <button class="btn btn-primary" id="byid">Go!</button>
+      </div>
+      <div class="srch">
+        <label for="album"> Album ID search: </label>
+        <input type="text" id="myalbum" name="album" />
+        <button class="btn btn-primary" id="byalbum">Go!</button>
+      </div>
+      <div class="srch">
+        <label for="name"> Name search: </label>
+        <input type="text" id="myname" name="name" />
+        <button class="btn btn-primary" id="byname">Go!</button>
+      </div>
+      <div class="response"></div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script src="app.js">
+    
+  </script>
 </html>
